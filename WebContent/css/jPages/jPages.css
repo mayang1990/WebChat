@@ -1,0 +1,79 @@
+.holder {
+	margin: 15px 0;
+}
+
+.holder a {
+	font-size: 12px;
+	cursor: pointer;
+	margin: 0 5px;
+	color: #333;
+}
+
+.holder a:hover {
+	background-color: #222;
+	color: #fff;
+}
+
+.holder a.jp-current, a.jp-current:hover { 
+	color: #FF4242;
+	font-weight: bold;
+}
+
+.holder a.jp-disabled, a.jp-disabled:hover {
+	color: #bbb;
+}
+
+.holder a.jp-current, a.jp-current:hover,
+.holder a.jp-disabled, a.jp-disabled:hover {
+	cursor: default; 
+	background: none;
+}
+
+.holder span { margin: 0 5px; }
+
+.divjpages a{
+	font-size: 16px;
+	height:20px;
+	line-height:20px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.divjpages a:hover{
+	background-color: #222;
+	color: #fff;
+}
+.divjpages a.jp-current, a.jp-current:hover { 
+	color: #FF4242;
+	font-weight: bold;
+}
+.holder a.jp-previous { 
+	margin-right: 15px; 
+}
+a.jp-previous {
+	position: relative;
+	top: 3px;
+	width: 20px;
+	height:20px;
+	border: 1px solid #D3E8F3;
+	display:inline-block;
+	margin: 0 2px;
+	background: url(../../images/app_window/jp-previous.jpg) no-repeat !important;
+}
+.holder a.jp-next { 
+	margin-left: 15px; 
+}
+a.jp-next {
+	position: relative;
+	top: 3px;
+	width: 20px;
+	height: 20px;
+	display:inline-block;
+	border: 1px solid #D3E8F3;
+	margin: 0 2px;
+	background: url(../../images/app_window/jp-next.jpg) no-repeat !important;
+}
+a.jp-previous:hover , a.jp-next:hover{
+    background: url(../../images/app_window/im_hover.png) repeat scroll 0 0 ;
+    border: 1px solid #848f97;
+    border-radius: 1px;
+}

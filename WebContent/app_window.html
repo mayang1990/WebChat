@@ -1,0 +1,98 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>在线交流</title>
+<script type="text/javascript" src="javascript/jQuery/jquery-1.10.2.js"> </script>
+<script type="text/javascript" src="javascript/contextmenu/jquery.ui.position.js"> </script>
+<script type="text/javascript" src="javascript/contextmenu/jquery.contextMenu.js"> </script>
+<script type="text/javascript" src="javascript/contextmenu/screen.js"> </script>
+<script type="text/javascript" src="javascript/contextmenu/prettify.js"> </script>
+
+<script type="text/javascript" src="javascript/javascript-init.js"> </script>
+<script type="text/javascript" src="javascript/app_window_func.js"> </script>
+<script type="text/javascript" src="javascript/templates.js"> </script>
+<script type="text/javascript" src="javascript/jPages/jPages.min.js"> </script>
+<script type="text/javascript" src="javascript/jQueryFileUpload/jquery.ui.widget.js"> </script>
+<script type="text/javascript" src="javascript/jQueryFileUpload/jquery.iframe-transport.js"> </script>
+<script type="text/javascript" src="javascript/jQueryFileUpload/jquery.fileupload.js"> </script>
+<script type="text/javascript" src="javascript/multiselect/jquery.multi-select.js"> </script>
+<script type="text/javascript" src="javascript/layer/layer.min.js"> </script>
+
+<link type="text/css" rel="stylesheet" href="css/app_window.css" />
+<link type="text/css" rel="stylesheet" href="css/app_window_func.css" />
+<link type="text/css" rel="stylesheet" href="css/contextmenu/jquery.contextMenu.css" />
+<link type="text/css" rel="stylesheet" href="css/contextmenu/screen.css" />
+<link type="text/css" rel="stylesheet" href="css/contextmenu/prettify.sunburst.css" />
+<link type="text/css" rel="stylesheet" href="css/jPages/jPages.css" />
+<link type="text/css" rel="stylesheet" href="css/NewFile.css" />
+<link type="text/css" rel="stylesheet" href="css/multiselect/multi-select.css" />
+
+<style type="text/css" >
+
+
+</style>
+</head>
+
+<body style="overflow:hidden" class="*">
+ <div id="task-bar">  
+    <ul class="task-window">                
+    </ul> 
+ </div>
+ 
+ <div id="app_window" >  
+ </div> 
+ <div id="msg_wav" style="height:1px;">
+ </div>
+ 
+ <div id="facePanel" class="facepanel"  style="display: no; left: 495px; top: 134px; z-index: 300089;">
+   <div class="defaultfacepanel" style="display: block;">
+   </div>
+ </div>
+
+
+ <div id="messageBubble" class="bubblecontainer" style="z-index: 200000; left: 123px; top: 406px; display: block;">
+     <div class="bubblepanel" id="messageBubblePanel" style="left:507px; top:351px;">			
+	  <span title="消息管理" class="setting" id="messageBubblePanel_setting"></span>			
+	  <div class="item" id="messageBubblePanel_message">
+		<span class="single"></span>
+		<span class="bubblepanel_body">
+		   <span class="content" > <span class="nick">java开发交流1 BBS.66</span>：求推荐C#视频	</span>		
+		</span>
+		<span class="count">(20)</span>	  
+	  </div>		
+	</div> 	
+	 <div class="bubblemsglist" id="messageBubble_bubbleMsgList" style="top: -220px; display: block;" _olddisplay="block">			
+	   <h3>未读消息(<span class="count" id="messageBubble_bubbleMsgList_userCount">2</span>)</h3>			
+	   <div class="bubblemsglistinner">				
+			 <div class="bubblemsglistcontainer" id="messageBubble_bubbleMsgListContainer">					
+			   <ul id="messageBubble_bubbleMsgList_ul">
+				  <li id="messagebubble_msg_23" class="item">
+					<a href="#">
+					  <span class="count">(1)</span>
+					  <img alt="" src="" class="avatar">
+					  <span class="content"><span class="contentInner">赵月：哈喽，单身汉 </span></span>
+					</a>	     
+			      </li>				
+			   </ul>				
+			 </div>				
+			 <div class="bubblemsgbuttons">					
+				<a class="cancelnotify" id="messageBubble_bubbleMsgList_cancelNotifyButton" href="#cancel">忽略提醒</a>					
+				<a class="viewall" id="messageBubble_bubbleMsgList_viewAll" href="#viewall">查看全部</a>				
+			 </div>			
+	   </div>
+	 </div>
+ </div>
+
+<div class="default-label-wrap">
+          <div class="label-animate-wrap">
+            <ul style="width: 1590px; left: 0px;" class="deafult-label-con" id="J_pagesWrap">
+             <li><a class="special-label-default" href="" value="word"><em></em><span>word</span></a><a class="special-label-default" href="" value="excel"><em></em><span>excel</span></a><a class="special-label-default" href="" value="powerpoint"><em></em><span>powerpoint</span></a><a class="special-label-default" href="" value="photoshop"><em></em><span>photoshop</span></a><a class="special-label-default" href="" value="outlook"><em></em><span>outlook</span></a><a class="special-label-default" href="" value="商务谈判"><em></em><span>商务谈判</span></a><a class="special-label-pass" href="" value="市场拓展"><em></em><span>市场拓展</span></a><a class="special-label-default" href="" value="英语"><em></em><span>英语</span></a><a class="special-label-default" href="" value="公文写作"><em></em><span>公文写作</span></a><a class="special-label-default" href="" value="办公自动化"><em></em><span>办公自动化</span></a><a class="special-label-default" href="" value="沟通协调"><em></em><span>沟通协调</span></a><a class="special-label-pass" href="" value="逻辑分析"><em></em><span>逻辑分析</span></a><a class="special-label-default" href="" value="表达能力"><em></em><span>表达能力</span></a><a class="special-label-default" href="" value="创新能力"><em></em><span>创新能力</span></a><a class="special-label-default" href="" value="目标管理"><em></em><span>目标管理</span></a></li><li><a class="special-label-default" href="" value="时间管理"><em></em><span>时间管理</span></a><a class="special-label-default" href="" value="团队合作"><em></em><span>团队合作</span></a><a class="special-label-default" href="" value="学习能力"><em></em><span>学习能力</span></a><a class="special-label-default" href="" value="压力管理"><em></em><span>压力管理</span></a><a class="special-label-default" href="" value="文件管理"><em></em><span>文件管理</span></a><a class="special-label-default" href="" value="精通互联网"><em></em><span>精通互联网</span></a><a class="special-label-default" href="" value="电话接待"><em></em><span>电话接待</span></a><a class="special-label-default" href="" value="人际关系维护"><em></em><span>人际关系维护</span></a><a class="special-label-default" href="" value="执行力"><em></em><span>执行力</span></a><a class="special-label-default" href="" value="领导力"><em></em><span>领导力</span></a><a class="special-label-default" href="" value="wps"><em></em><span>wps</span></a><a class="special-label-default" href="" value="visio"><em></em><span>visio</span></a><a class="special-label-default" href="" value="flash"><em></em><span>flash</span></a><a class="special-label-default" href="" value="mindmap"><em></em><span>mindmap</span></a><a class="special-label-default" href="" value="access"><em></em><span>access</span></a><a class="special-label-default" href="" value="dreamwaver"><em></em><span>dreamwaver</span></a></li><li><a class="special-label-default" href="" value="spss"><em></em><span>spss</span></a><a class="special-label-default" href="" value="心理咨询"><em></em><span>心理咨询</span></a><a class="special-label-default" href="" value="法律咨询"><em></em><span>法律咨询</span></a><a class="special-label-default" href="" value="工程预算"><em></em><span>工程预算</span></a><a class="special-label-default" href="" value="行政文秘"><em></em><span>行政文秘</span></a><a class="special-label-default" href="" value="市场营销"><em></em><span>市场营销</span></a><a class="special-label-default" href="" value="网络营销"><em></em><span>网络营销</span></a><a class="special-label-default" href="" value="项目管理"><em></em><span>项目管理</span></a><a class="special-label-default" href="" value="国际商务"><em></em><span>国际商务</span></a></li></ul>
+          </div>
+          <div class="default-label-page">
+               <a title="查看其他标签" href="" class="label-pre label-pre-normal label-pre-disable" id="J_prePage" onclick="return false;" hidefocus="true">上一页</a>
+               <a title="查看其他标签" href="" class="label-next label-next-normal" id="J_nextPage" onclick="return false;" hidefocus="ture">下一页</a>
+          </div>
+</div>
+</body>
+</html>

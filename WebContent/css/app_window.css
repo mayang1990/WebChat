@@ -1,0 +1,1373 @@
+/* CSS Document */
+/* 2014-03-25
+	 * author lianghao
+	 *  
+	 */
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+	{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	cursor: default;
+}
+
+body {
+	background: url(../images/app_window/im_desktopbg1.png) repeat
+		!important;
+}
+
+/*main board begin*/
+/*app_window css begin*/
+.app_window {
+	border: 1px solid #3E7186;
+	display: block;
+	left: -999999px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+.tip_window {
+	border: 1px solid #3E7186;
+	display: block;
+	left: -999999px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+.window {
+	height: 100%;
+	width: 100%;
+}
+
+.bgcontainer {
+	height: 100%;
+	left: 0px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: -1;
+}
+
+.content {
+	height: 100%;
+	overflow: hidden;
+	border: 0 none;
+	border-radius: 0;
+	box-shadow: none;
+	margin: 0px;
+	position: static;
+}
+
+.titlebar {
+	margin: 5px;
+	cursor: default;
+	height: 25px;
+}
+
+.titlebutton {
+	position: absolute;
+	right: 2px;
+	top: -1px;
+	overflow: hidden;
+}
+
+.titlebutton_close {
+	background: url(../images/app_window/im_close_w.png) no-repeat
+		!important;
+	float: right;
+	height: 20px;
+	margin: 0;
+	width: 30px;
+	cursor: pointer;
+}
+
+.titlebutton_close:hover {
+	background: url(../images/app_window/im_close_r.png) no-repeat
+		!important;
+}
+
+.titlebutton_min {
+	background: url(../images/app_window/im_min_w.png) no-repeat !important;
+	float: right;
+	height: 20px;
+	margin: 0;
+	width: 30px;
+	cursor: pointer;
+}
+
+.titlebutton_min:hover {
+	background: url(../images/app_window/im_min_b.png) no-repeat !important;
+}
+
+.title {
+	height: 25px;
+	line-height: 15px;
+	text-align: left;
+	overflow: hidden;
+}
+
+.titletext,a.titletext {
+	color: #393836;
+	line-height: 15px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.window_current .titletext,.window_current a.titletext {
+	color: #393836;
+	color: #6d6d6d;
+}
+
+.body {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 0 none;
+	bottom: 0;
+	position: absolute;
+	top: 25px;
+	width: 100%;
+}
+
+.controlarea {
+	border: 0 none;
+	height: 28px;
+	background: #E0EFF6;
+	border-top: 1px solid #CDE5F1;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+/*app_window css end*/
+
+.mypanel {
+	height: 50px;
+	margin: 5px;
+	overflow: hidden;
+	position: relative;
+}
+
+.myavatar {
+	display: inline;
+	position: relative;
+	float: left;
+	border: 1px solid #999;
+	padding: 1px;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	background: white;
+	zoom: 1;
+	cursor: pointer;
+}
+
+.myinfo {
+	margin: 10px 0 0 60px;
+	height: 16px;
+	overflow: hidden;
+	zoom: 1;
+	width: 140px;
+}
+
+.mynick {
+	float: left;
+	width: 90px;
+	height: 16px;
+	overflow: hidden;
+	line-height: 16px;
+	font-weight: bold;
+	color: #030303;
+	cursor: default;
+}
+
+.mypaneltoolbar {
+	height: 20px;
+	margin: 2px 0 4px;
+}
+
+.mypanel_toolbar_button {
+	float: left;
+	height: 18px;
+	margin: 0 4px 0 2px;
+	position: relative;
+	width: 18px;
+	left: 1px;
+	top: 1px;
+}
+
+.mypaneltoolbar a:hover {
+	background: url(../images/app_window/im_hover.png) repeat-x;
+	border: 1px solid #848f97;
+	margin-right: 2px;
+	left: 0px;
+	top: 0px;
+}
+
+.mypanel_toolbar_icon {
+	float: left;
+	height: 16px;
+	margin: 1px;
+	width: 16px;
+}
+
+.mypanel_toolbar_refresh {
+	background: url(../images/app_window/im_refresh.png) no-repeat;
+}
+
+.mypanel_toolbar_homepage {
+	background: url(../images/app_window/im_homepage.png) no-repeat;
+}
+
+.mainpanel {
+	overflow: hidden;
+	position: relative;
+}
+
+.main {
+	display: block;
+	height: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.tab {
+	background: #BADBEA;
+	float: left;
+	height: 33px;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.tab .current {
+	background: none repeat scroll 0 0 #EAF3F8;
+	cursor: default;
+}
+
+.tabfriendlist {
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: 33%;
+}
+
+.tabgrouplist {
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: 33%;
+}
+
+.tabrecentlist {
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: 34%;
+}
+
+.tab ul li {
+	list-style: disc outside none;
+}
+
+ul {
+	list-style: none outside none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.tabfriendlisticon {
+	height: 33px;
+	width: 20px;
+	background: url(../images/app_window/im_tab_a1.png) no-repeat;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+.iconcurrent1 {
+	background: url(../images/app_window/im_tab_b1.png) no-repeat;
+}
+
+.tabgrouplisticon {
+	height: 33px;
+	width: 20px;
+	background: url(../images/app_window/im_tab_a2.png) no-repeat;
+	margin: 0 auto;
+}
+
+.iconcurrent2 {
+	background: url(../images/app_window/im_tab_b2.png) no-repeat;
+}
+
+.tabrecentlisticon {
+	height: 33px;
+	width: 20px;
+	background: url(../images/app_window/im_tab_a3.png) no-repeat;
+	margin: 0 auto;
+}
+
+.iconcurrent3 {
+	background: url(../images/app_window/im_tab_b3.png) no-repeat;
+}
+
+.listcontainer {
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.friendlistpanel {
+	background: none repeat scroll 0 0 #F5FAFD;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+}
+
+.friendlist {
+	bottom: 32px;
+	display: block;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	top: 0;
+	width: 100%;
+}
+
+.friendline {
+	background: none repeat scroll 0 0;
+	color: #000000;
+	cursor: pointer;
+	display: block;
+	height: 20px;
+	overflow: hidden;
+	text-decoration: none;
+	padding: 4px 0px 4px 15px;
+}
+
+.friendphoto_container {
+	float: left;
+	height: 20px;
+	overflow: hidden;
+	width: 20px;
+}
+
+.friendphoto {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 0 solid #E1E1E1;
+	display: block;
+	float: left;
+	height: 20px;
+	overflow: hidden;
+	padding: 1px;
+	position: static;
+	width: 20px;
+}
+
+.friendlist_rightcontainer {
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+.friendlist_nick,.friendlist_sign {
+	height: 16px;
+	line-height: 16px;
+	margin: 0 0 0 5px;
+	overflow: hidden;
+	padding: 2px 0;
+	text-decoration: none;
+	width: 1000px;
+}
+
+.friendlistbottom {
+	background: none repeat scroll 0 0 #DFEEF6;
+	bottom: 0;
+	height: 25px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.friendsearch,.groupcreate {
+	color: #333333;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	margin: 6px 4px 4px;
+	text-indent: 4px;
+}
+
+.friendsearch_icon {
+	background: url(../images/app_window/im_bottom_friendfind.png) no-repeat;
+	display: inline;
+	float: left;
+	height: 16px;
+	overflow: hidden;
+	width: 16px;
+}
+
+.groupcreate_icon {
+	background: url(../images/app_window/im_bottom_groupcreate.png)
+		no-repeat;
+	display: inline;
+	float: left;
+	height: 16px;
+	overflow: hidden;
+	width: 16px;
+}
+
+.friendmanage,.groupsearch {
+	color: #333333;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	margin: 6px 4px 4px;
+	text-indent: 4px;
+}
+
+.friendmanage_icon {
+	background: url(../images/app_window/im_bottom_manage.png) no-repeat;
+	display: inline;
+	float: left;
+	height: 16px;
+	overflow: hidden;
+	width: 16px;
+}
+
+.groupsearch_icon {
+	background: url(../images/app_window/im_bottom_friendfind.png) no-repeat;
+	display: inline;
+	float: left;
+	height: 16px;
+	overflow: hidden;
+	width: 16px;
+}
+
+.friendmsg,.groupmanage {
+	color: #333333;
+	cursor: pointer;
+	display: inline;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	margin: 6px 4px 4px;
+	text-indent: 4px;
+}
+
+.friendmsg_icon {
+	background: url(../images/app_window/im_bottom_msg.png) no-repeat;
+	display: inline;
+	float: left;
+	height: 16px;
+	overflow: hidden;
+	width: 16px;
+}
+
+.groupmanage_icon {
+	background: url(../images/app_window/im_bottom_manage.png) no-repeat;
+	display: inline;
+	float: left;
+	height: 16px;
+	overflow: hidden;
+	width: 16px;
+}
+
+.grouplistpanel {
+	background: none repeat scroll 0 0 #F5FAFD;
+	display: none;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+}
+
+.groupline {
+	color: #000000;
+	cursor: pointer;
+	display: block;
+	height: 40px;
+	overflow: hidden;
+	text-decoration: none;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	padding-left: 10px;
+}
+
+.groupphoto_container {
+	float: left;
+	height: 40px;
+	overflow: hidden;
+	width: 40px;
+}
+
+.grouplist_rightcontainer {
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+.grouplist_nick,.grouplist_sign {
+	height: 30px;
+	line-height: 30px;
+	margin: 5px 0 5px 5px;
+	overflow: hidden;
+	padding: 2px 0;
+	text-decoration: none;
+	width: 1000px;
+	font-size: 16px;
+}
+
+.recentlistpanel {
+	background: none repeat scroll 0 0 #F5FAFD;
+	display: none;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
+}
+
+.listhead {
+	border: 0 none;
+	color: #000000;
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 3px;
+	overflow: hidden;
+}
+
+.list_icon1 {
+	background: url(../images/app_window/im_fold.png) no-repeat;
+	float: left;
+	height: 16px;
+	margin: 5px 0px 9px 5px;
+	overflow: hidden;
+	text-indent: -999em;
+	width: 12px;
+}
+
+.list_icon2 {
+	background: url(../images/app_window/im_unfold.png) no-repeat;
+	float: left;
+	height: 16px;
+	margin: 3px 0px 3px 5px;
+	overflow: hidden;
+	text-indent: -999em;
+	width: 12px;
+}
+
+.listbody {
+	height: 0;
+	overflow: hidden;
+}
+
+.bottomside{
+	position:absolute;
+	overflow:hidden;
+	background: url(../images/app_window/im_transparent.gif) repeat;
+	display: block;
+    left: 0px;
+	bottom:-5px;
+	width: 100%;
+	height: 8px;
+	z-index: 1;
+	cursor: s-resize;
+}
+/*main board end*/
+
+/* 2014-04-07
+	 * author lianghao
+	 *  
+	 */
+/** chat window begin **/
+.chat_iconarea {
+	float: left;
+	height: 34px;
+	width: 34px;
+}
+
+.chat_icon {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #CACACA;
+	display: block;
+	float: left;
+	height: 30px;
+	overflow: hidden;
+	padding: 1px;
+	position: static;
+	width: 30px;
+}
+
+.chat_friendavatararea {
+	float: left;
+	height: 34px;
+	width: 34px;
+}
+
+.avatarinchat {
+	background: none repeat scroll 0 0 white;
+	border: 1px solid #cacaca;
+	display: block;
+	float: left;
+	height: 32px;
+	overflow: hidden;
+	padding: 1px;
+	position: static;
+	width: 32px;
+}
+
+.chat_namearea {
+	height: 16px;
+	line-height: 16px;
+	margin-left: 38px;
+	overflow: hidden;
+}
+
+.chat_moreinfoarea {
+	height: 18px;
+	line-height: 18px;
+	margin: 0 0 0 38px;
+	overflow: hidden;
+}
+
+.chat_announcementarea {
+	display: block;
+	font-weight: normal;
+	height: 16px;
+	line-height: 16px;
+	margin: 0 0 0 18px;
+	overflow: hidden;
+}
+
+.chat_buttonbar {
+	margin: 6px 0 0;
+}
+
+.chat_buttonbar a {
+	display: block;
+	float: left;
+	height: 36px;
+	list-style: none outside none;
+	margin: 0 2px 0 0;
+	width: 36px;
+}
+
+.chat_buttonbar a:hover {
+	background: url(../images/app_window/im_hoverbig.png) no-repeat;
+}
+
+.chat_buttonbar span {
+	display: block;
+	height: 28px;
+	margin: 5px 4px 3px;
+	width: 28px;
+}
+
+.chat_videobutton {
+	background: url(../images/app_window/im_tool_video.png) no-repeat;
+}
+
+.chat_sendfile {
+	background: url(../images/app_window/im_tool_file.png) no-repeat;
+}
+
+.chat_createdisc {
+	background: url(../images/app_window/im_tool_disc.png) no-repeat;
+}
+
+.chat_sharefile {
+	background: url(../images/app_window/im_tool_share.png) no-repeat;
+}
+/*videoinvite bar*/
+.chat_videoinvite {
+	background: none repeat scroll 0 0 #E3F1F7;
+	bottom: 0;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 150px;
+}
+
+.chat_video_top {
+	height: 30px;
+	width: 100%;
+	/*   background:url(../images/app_window/im_videotopbg.png) repeat; */
+}
+
+.chat_video_close {
+	height: 12px;
+	width: 12px;
+	background: url(../images/app_window/im_video_close.png) no-repeat;
+	margin: 5px 5px 5px;
+	float: right;
+	cursor: pointer;
+}
+
+.chat_video_close:hover {
+	background: url(../images/app_window/im_video_close2.png) no-repeat;
+}
+
+.chat_video_icon {
+	background: url(../images/app_window/im_video_icon.png) no-repeat;
+	width: 120px;
+	height: 120px;
+	margin: 10px 15px 5px;
+}
+
+.chat_video_msg {
+	height: 30px;
+	width: 100%;
+	font-size: 12px;
+	line-height: 30px;
+	margin: 5px 5px 5px;
+	text-align: center;
+	color��
+}
+
+.chat_video_buttonbar {
+	display: block;
+	float: left;
+	font-size: 12px;
+	height: 80px;
+	line-height: 30px;
+	margin: 0x;
+	overflow: hidden;
+	width: 100%;
+	bottom: 50px;
+	position: absolute;
+}
+
+.video_invite_button {
+	display: block;
+	float: right;
+	font-size: 12px;
+	height: 28px;
+	line-height: 28px;
+	margin: 5px 40px 5px 5px;
+	overflow: hidden;
+	text-align: center;
+	width: 78px;
+	cursor: pointer;
+}
+
+.video_invite_agree {
+	background: url(../images/app_window/im_video_receive.png) no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+.video_invite_disagree {
+	background: url(../images/app_window/im_video_refuse.png) no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+/*groupmember sidebar*/
+.chat_sidebar2 {
+	background: none repeat scroll 0 0 #E3F1F7;
+	bottom: 0;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 10px;
+}
+
+.chat_sidebar_trigger {
+	color: #ffffff;
+	cursor: pointer;
+	height: 94px;
+	line-height: 1;
+	margin-top: -60px;
+	position: absolute;
+	text-align: center;
+	top: 45%;
+	width: 22px;
+}
+
+.chat_sidebar2_expand .chat_sidebar_trigger .expand {
+	display: none;
+}
+
+.chat_sidebar_trigger .expand {
+	background: url(../images/app_window/im_expand.png) no-repeat;
+	color: #1c4b64;
+	display: block;
+	height: 72px;
+	padding-top: 22px;
+	width: 22px;
+	color: ff66oo;
+}
+
+.chat_sidebar2_expand .chat_sidebar_trigger .unexpand {
+	display: block;
+}
+
+.chat_sidebar_trigger .unexpand {
+	background: url(../images/app_window/im_unexpand.png) no-repeat;
+	display: none;
+	height: 50px;
+	width: 9px;
+	margin-top: 30px;
+}
+
+.chat_sidebar {
+	bottom: 0;
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 190px;
+}
+
+.chat_groupmember_title {
+	background: url(../images/app_window/im_friendmanager_header.png)
+		repeat-x;
+	background-color: #99ccff;
+	color: #666666;
+	height: 25px;
+	padding: 0 0 0 0;
+	line-height: 25px;
+	margin: 4px 0px 0px 0px;
+	border: 1px solid #b3b3b3;
+	text-align: center;
+}
+
+.chat_groupmember_mainarea {
+	background: none repeat scroll 0 0 #E8F6FB;
+	bottom: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+}
+
+.chat_groupmember_friend,.chat_groupmember_deletable {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	color: #000000;
+	cursor: pointer;
+	display: block;
+	height: 20px;
+	overflow: hidden;
+	padding: 2px 0;
+	position: relative;
+	text-decoration: none;
+}
+
+.chat_groupmaster_icon {
+	background: url(../images/app_window/im_groupmanager_iconsmall.png)
+		no-repeat;
+	height: 15px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 5px;
+	width: 15px;
+}
+
+.chat_groupmember_iconarea {
+	float: left;
+	height: 20px;
+	margin-left: 15px;
+	overflow: hidden;
+	width: 22px;
+}
+
+.chat_groupmember_icon {
+	display: block;
+	float: left;
+	height: 20px;
+	overflow: hidden;
+	position: static;
+	width: 20px;
+}
+
+.chat_groupmember_namearea {
+	float: left;
+	overflow: hidden;
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 5px;
+}
+
+.chat_groupmember_nick {
+	height: 16px;
+	line-height: 16px;
+	padding: 4px 0px 0px 0px;
+	text-decoration: none;
+	width: 2000px;
+	word-break: break-all;
+	display: block;
+}
+
+/*end groupmember sidebar*/
+.chat_mainarea {
+	background: none repeat scroll 0 0;
+	height: 100%;
+	margin: 0;
+	position: relative;
+}
+
+.chat_chatboard {
+	bottom: 143px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.chat_msglist {
+	bottom: 0;
+	display: block;
+	margin: 0 auto;
+	overflow: auto;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.chat_editortoolbar {
+	background: none repeat scroll 0 0 #E6F2FD;
+	border-top: 1px solid #B7D3E7;
+	bottom: 142px;
+	display: none;
+	height: 24px;
+	padding: 2px 0 2px;
+	position: absolute;
+	width: 100%;
+}
+
+.chat_editortoolbar ul,.chat_editortoolbar li {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.chat_toolbar li {
+	margin: 0 1px;
+}
+
+.chat_editortoolbar ul li {
+	float: left;
+}
+
+.chat_toolbar_top {
+	background: none repeat scroll 0 0 #D3E8F3;
+	bottom: 138px;
+	cursor: n-resize;
+	font-size: 0;
+	height: 4px;
+	left: 0;
+	line-height: 5px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999px;
+	width: 100%;
+}
+
+.chat_toolbar {
+	background: none repeat scroll 0 0 #D3E8F3;
+	bottom: 115px;
+	height: 25px;
+	left: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.chat_toolbar a:hover {
+	background: url(../images/im_hover.png) repeat scroll 0 0 ;
+	border: 1px solid #848f97;
+	border-radius: 1px;
+	display: block;
+}
+
+.chat_fontbutton {
+	background: url(../images/app_window/im_font.png) no-repeat;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+}
+
+.chat_facebutton {
+	background: url(../images/app_window/im_face.png) no-repeat;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+}
+
+.chat_clearbutton {
+	background: url(../images/app_window/im_clear.png) no-repeat;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+}
+
+.chat_toolbar a {
+	border: 1px solid #D3E8F3;
+	display: block;
+	float: left;
+	height: 20px;
+	margin: 0 2px;
+	width: 20px;
+}
+
+.chat_historybuttoncon {
+	float: right !important;
+	margin: 0 2px !important;
+	width: 80px !important;
+}
+
+.chat_historybutton {
+	background: url(../images/app_window/im_msg.png) no-repeat
+		rgba(0, 0, 0, 0);
+	cursor: pointer;
+	float: left;
+	height: 20px;
+	width: 20px;
+}
+
+.chat_historybuttontxt {
+	color: #000000;
+	float: left;
+	margin: 0 5px;
+	line-height: 20px;
+}
+
+.chat_inputbox {
+	bottom: 28px;
+	display: block;
+	font-size: 12px;
+	height: 85px;
+	left: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 1px 0;
+	position: absolute;
+	width: 100%;
+}
+
+.chat_rich_editor {
+	color: #000000;
+	font-family: 宋体;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	height: 100%;
+	margin-left: 3px;
+	text-decoration: none;
+}
+
+.chat_rich_editor_div,.chat_rich_editor_text {
+	border: 0 none;
+	display: block;
+	height: 100%;
+	margin: 0;
+	outline: 0 none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0;
+	width: 100%;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.chat_rich_editor_div img .faceicon {
+	display: inline;
+	height: 24px;
+	width: 24px;
+}
+
+.chat_rich_editor_div img {
+	display: none;
+	vertical-align: text-bottom;
+}
+
+.chat_rich_editor_div * {
+	color: inherit !important;
+	display: inline;
+	float: none;
+	font: inherit !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: static;
+	text-decoration: inherit !important;
+}
+
+fieldset,img {
+	border: 0 none;
+}
+
+.chat_controlpanel {
+	background: #E0EFF6;
+	border-top: 1px solid #CDE5F1;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	font-size: 14px;
+}
+
+.chat_sendmsg {
+	background: url(../images/app_window/im_btn_bg.png) no-repeat;
+	display: block;
+	float: right;
+	height: 22px;
+	line-height: 22px;
+	margin: 3px 5px 5px 0;
+	overflow: hidden;
+	text-align: center;
+	width: 69px;
+	font-size: 12px;
+	color: #000000;
+}
+
+.chat_sendmsg:hover {
+	background: url(../images/app_window/im_btn_bg1.png) no-repeat;
+}
+
+.chat_close {
+	background: url(../images/app_window/im_btn_bg.png) no-repeat;
+	display: block;
+	float: right;
+	height: 22px;
+	line-height: 22px;
+	margin: 3px 5px 5px 0;
+	overflow: hidden;
+	text-align: center;
+	width: 69px;
+	font-size: 12px;
+	color: #000000;
+}
+
+.chat_close:hover {
+	background: url(../images/app_window/im_btn_bg1.png) no-repeat;
+}
+
+:link,*:visited {
+	text-decoration: none;
+}
+/*message begin*/
+.chat_mymsg,.chat_friendmsg {
+	display: block;
+	margin: 0;
+	padding: 5px;
+}
+
+.chat_mymsg .msghead {
+	color: #008000;
+	overflow: hidden;
+}
+
+.chat_friendmsg .msghead {
+	color: #0000FF;
+	overflow: hidden;
+}
+
+.chat_friendmsg .defaultfontstyle,.chat_mymsg .defaultfontstyle {
+	color: #000000;
+	font-family: 宋体;
+	font-size: 10pt;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.chat_mymsg .msgbody,.chat_friendmsg .msgbody {
+	color: #000000;
+	margin: 0 0 0 13px;
+	word-wrap: break-word;
+}
+
+.msgFileBox {
+	color: #505050;
+	padding-left: 3px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+.icon_others {
+	display: inline-block;
+	overflow: hidden;
+	height: 20px;
+	width: 20px;
+	margin: 0 2px 0 0;
+	background: url('./images/eqq_sprite_png.png?t=20111011001') no-repeat
+		-140px -158px;
+}
+
+/*end message */
+
+/** chat window end **/
+
+/** task bar begin **/
+#task-bar {
+	position: absolute;
+	right: 20;
+	bottom: 0;
+	left: 20;
+	width: 100%;
+	overflow: hidden;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+}
+
+.task-window {
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	position: relative;
+}
+
+.taskitembox {
+	display: block;
+}
+
+.task-window a {
+	position: relative;
+	float: left;
+	margin-right: 1px;
+	cursor: pointer;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+}
+
+.taskitem {
+	background: url(../images/app_window/taskHdBtn_2.png) no-repeat;
+}
+
+.taskitem:hover {
+	background: url(../images/app_window/taskHdBtn_4.png) no-repeat;
+}
+
+.focus {
+	background: url(../images/app_window/taskHdBtn_1.png) no-repeat;
+}
+
+.focus:hover {
+	background: url(../images/app_window/taskHdBtn_3.png) no-repeat;
+}
+
+.taskitemicon {
+	background: url() no-repeat;
+	cursor: pointer;
+	float: left;
+	height: 24px;
+	margin: 10px 2px 5px 2px;
+	width: 24px;
+}
+
+.taskitemicon img {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+}
+
+.taskitemtxt {
+	cursor: pointer;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin: 7px 0px 3px 2px;
+	overflow: hidden;
+	width: 70px;
+}
+
+.taskitemtxt_nick {
+	height: 30px;
+	line-height: 30px;
+	width: 200px;
+	overflow: hidden;
+}
+/** task bar end **/
+
+/** facecontrol begin**/
+.facepanel {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 2px solid #666666;
+	bottom: 140px;
+	display: none;
+	height: 178px;
+	overflow: hidden;
+	position: absolute;
+	width: 290px;
+	z-index: 2;
+}
+
+.defaultfacepanel {
+	background: url(../images/faceicon/faceicon.gif) no-repeat;
+	display: none;
+	height: 168px;
+	margin: 5px;
+	overflow: hidden;
+	width: 280px;
+}
+
+.defaultfacepanel a {
+	cursor: default;
+	display: block;
+	float: left;
+	height: 26px;
+	margin: 1px 1px 1px 1px;
+	overflow: hidden;
+	width: 26px;
+}
+
+.defaultfacepanel a:hover {
+	border: 1px solid #0000FF;
+	cursor: default;
+	display: block;
+	float: left;
+	height: 25px;
+	margin: 0px 0 0 0px;
+	overflow: hidden;
+	width: 25px;
+}
+
+/**facecontrol end**/
+
+/*search friends begin*/
+.dItem_s {
+	width: 200px;
+	float: left;
+	padding: 0;
+	margin-left: 15px;
+	height: 30px;
+	line-height: 30px;
+}
+/*search friends end*/
